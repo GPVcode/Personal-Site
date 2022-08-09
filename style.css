@@ -1,60 +1,59 @@
 
-/* Center our header and set font family*/
-header{
+*{
+    box-sizing: border-box;
+    font-family: "Allan", Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.myHeading{
+    display: flex;
+    justify-content: space-evenly;
+    
     font-family: "Allan", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    font-size: large;
-    height: 100%;
-
-}
-
-.myRole, .myName{
-    font-size: 50px;
+    font-weight: 900px;
+    font-size: 60px;
+    /* this is code for gradient */
     background: -webkit-linear-gradient(rgb(0, 0, 0) 70%, rgb(83, 249, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top: 40px;
-}
-
-  
-
-/* Make font consistent and add some space from center image and text */
-main{
-    font-family: "Allan", Helvetica, sans-serif;
     padding-top: 20px;
-    padding-bottom: 20px;
-    height: 100%;
-}
-
-
-/* Center footer text with black background and white text */
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: auto;
-
-}
-
-/* Center our image and set backgroud color to black */
-.image-container {
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    height: auto;
-}
-
-/* make our text more aesthetic with spacing */
-article, .intro, .contact-me{
-    margin: 0 auto;
-    width: 50%;
-    font-size: large;
     
 }
 
+
+/* make our text more aesthetic with spacing */
+@media all and (min-width: 800px){
+    
+    article, .intro, .contact-me{
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+        font-size: large;
+    }
+}
+
+
+.bold{
+    font-weight: 800px;
+    font-size: xx-large;
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    }
+
+.button{
+    display: block;
+    width: 30%;
+    background: white;
+}
 a:hover{
-    color: deepskyblue;
+    color: rgb(83, 249, 255);
     font-size:large;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(83, 249, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .clock {
@@ -70,12 +69,29 @@ a:hover{
 #timerField {
     font-size: 50px;
     font-family: "Allan", monospace;
-    /* background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 75%,
-    #919191 100%,
-    #ffffff 10%); */
     padding-left: 10px;
     padding-right: 10px;
     background-color: white;
+}
+
+
+/* Center footer text with black background and white text */
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    margin-top: 100px;
+    
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(83, 249, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
