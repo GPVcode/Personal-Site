@@ -11,8 +11,10 @@
 <body>
     <!-- this is my header where I highlight my name and professional role.-->
     <header> 
-        <h1 class="myName">Gabriel Villaruel</h1>
-        <h2 class="myRole">Software Engineer</h2>
+        <h1 class="myHeading">Gabriel Villaruel</h1>
+        
+        <h2 class="myHeading no-divider">Software Engineer</h2>
+        <div class="lg"></div>
     </header>
     <!-- create a div container for our center image. -->
     <div class="clock">
@@ -56,46 +58,43 @@
     </script>
     <!-- in the main section I intend to use an image of either myself or something meaningful to me -->
     <main>
-        <!-- I am putting the intro into a class called intro because I may want to design this later -->
         <article class="intro"> 
-            <h3><button type="button"onclick="document.getElementById('intro').style.display='block'">Intro</button></h3>     
+            <h3><button class="button" type="button"onclick="document.getElementById('intro').style.display='block'">Intro</button></h3>     
             <p id="intro" style="display:none">
-                Are you looking for a passionate developer?  <br><br>
-                My name is <em>Gabriel Villaruel</em>, and I am a <em>software engineer</em> from <em>Los Angeles, California</em>. <br><br>
-                Welcome to my personal site! This page intended to give a formal introduction on who I am and how I can be of service.
+                <p>
+                    Funny how life happens...
+                </p>
+                <p>
+                    My name is <em>Gabriel Villaruel</em>, and I am a <em>software engineer</em> from <em>Los Angeles, California</em>.
+                </p>
+                <p>
+                    Welcome to my personal site!
+                </p>
             </p>
-            <br>
-        <hr>
-            <br>
-        </article>
-        <!-- also giving the about me section its own class in the event that I want to give it it's own custom design -->
-        
-        <article class="about-me">
-            <h3>Learn About Me</h3>      
+
+            <h3 class="bold">Learn About Me</h3>      
             <p> 
-                After spending some time exploring the fun world of real estate, I discovered my passion for coding after taking a weekend to build myself a simple private blog to jot down my thoughts. I loved developing so much that I entered into a flow state where time ceased to exist. Since then, I never looked back. I am now a student at Thinkful, and I am elated to be on this journey of becoming the best software engineer I can be!
-                <br><br>
+                What started as a hobby, became a passion. While exploring the fun world of real estate, I discovered my passion for coding after gradually thinking about coding more than my actual job.
+            </p>
+            <p>
+                One weekend, I entered a flow state while coding which served as the first domino to fall in my decision to become a professional coder. Since then, I never looked back. I am now a student at Thinkful, and I am excited to be on this journey as a software engineer!
+            </p>
+            <p>
                 If you are looking for a new developer who thrives in team-based work environments and passionate about coding, please reach out to connect!
             </p>
-             <!-- Separate main sections with hr line -->
-            <br>
-            <hr>
-            <br>
-                <h3>Hobbies and Interests</h3>
+
+                <h3 class="bold">Hobbies and Interests</h3>
                 <p>With a background in sports, I love practicing and witnessing skills develop. My hobbies include: </p>
                 <!-- Use lists to convey my hobbie sand interests - it's much easier to see -->
-                <ul>
+                <ul class="interests">
                     <li>coding</li>
                     <!-- using lists within main list for more specifics on my hobbies -->
                     <li>fitness</li>
-                    <li>outdoors recreation</li>
+                    <li>real estate</li>
                     <li>personal development</li>
                 </ul>
-            <!-- Separate main sections with hr line -->
-            <br>
-            <hr>
-            <br>
-            <h3>Contact Gabriel</h3>
+
+            <h3 class="bold">Contact Gabriel</h3>
         Connect with me through the following links:
             <!-- Use a href to create link to my personal pages and put the reference links in a list -->
             <ol>
@@ -107,7 +106,7 @@
     </main>
     <!-- create footer with copyright -->
     <footer> 
-        <p><br>©GPVcode<br><br></p>
+        <p class="bold"><br>©GPVcode<br><br></p>
     </footer>
 
 </body>
